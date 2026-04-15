@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden bg-[#140c06]">
       {/* Background Video */}
       <video
         autoPlay
@@ -12,8 +12,9 @@ export default function HeroSection() {
         loop
         playsInline
         preload="auto"
+        poster="/images/products/unniyappam.jpg"
         className="absolute inset-0 w-full h-full object-cover z-0"
-        style={{ backfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
+        style={{ willChange: 'transform' }}
       >
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>

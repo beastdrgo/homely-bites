@@ -5,6 +5,7 @@ import { CartProvider } from '@/context/CartContext'
 import Navbar from '@/components/Navbar'
 import CartDrawer from '@/components/CartDrawer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import SplashScreen from '@/components/SplashScreen'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-inter antialiased">
         <CartProvider>
+          <SplashScreen />
           <Navbar />
           <CartDrawer />
           <main>{children}</main>

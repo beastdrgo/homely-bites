@@ -84,3 +84,7 @@ html {
     text-wrap: balance;
   }
 }
+
+@keyframes splash-spin {
+  to { transform: rotate(360deg); }
+}
